@@ -25,7 +25,9 @@
 1. Install [NodeJS](https://nodejs.org/)
 2. Install [Files](https://github.com/Ruwin-dsc/Better-Protect-Remade/archive/refs/heads/main.zip)
 3. Complete the configuration
-5. Enjoy the tool
+4. Setup the database, for help click [here](https://gist.github.com/Ruwin-dsc/9187697ae53037751cae0e590d20a5ac)
+5. Create an API KEY: https://perspectiveapi.com/how-it-works/
+6. Enjoy the tool
 
 ### <a id="terms"></a>💼 〢 Terms Of Usage
 
