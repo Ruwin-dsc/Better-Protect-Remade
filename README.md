@@ -1,5 +1,5 @@
 <h1 align="center">
- 👑 〢 Better Protect
+ 👑 〢 Better Protect (https://discord.gg/better-944610139388919869)
 </h1>
 
 ---
