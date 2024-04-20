@@ -38,4 +38,5 @@
 ### <a id="authors"></a>🕵️‍♂️ 〢 Authors
 - [Ruwin](https://github.com/Ruwin-dsc)
 
+Merci à .crackk et sadek.yk de m'avoir aidé
 ---
