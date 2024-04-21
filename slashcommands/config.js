@@ -117,7 +117,7 @@ module.exports = {
                         createLogChannel('ß・guildkick', 'expuluser');
                         createLogChannel('ß・messagewithlink', 'antilink');
                         createLogChannel('ß・messagespam', 'antispam');
-                        createLogChannel('ß・messagewithtoxicity', 'tocicite');
+                        createLogChannel('ß・messagewithtoxicity', 'toxicite');
                         createLogChannel('ß・roleupdate', 'updaterole');
                         createLogChannel('ß・channelupdate', 'updatechannel');
                         createLogChannel('ß・guildupdate', 'updateguild');
@@ -133,59 +133,59 @@ module.exports = {
                     interaction.deferUpdate()
 
                     if(activatemodule == true) {
-                    bot.db.query(`UPDATE antibot SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE antiroleadd SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE antiban SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE antithreadcreate SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE createrole SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE createchannel SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE createwebhook SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE decouser SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE depluser SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE removerole SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE timeout SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE expuluser SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE antilink SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE antispam SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE toxicite SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE updaterole SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE updatechannel SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE updateguild SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE massiverole SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE muteuser SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE sourdineuser SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE supprembed SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE deleterole SET logs = 'on' WHERE guildId = ${message.guild.id}`);
-                    bot.db.query(`UPDATE deletechannel SET logs = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE antibot SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE antiroleadd SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE antiban SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE antithreadcreate SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE createrole SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE createchannel SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE createwebhook SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE decouser SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE depluser SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE removerole SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE timeout SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE expuluser SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE antilink SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE antispam SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE toxicite SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE updaterole SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE updatechannel SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE updateguild SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE massiverole SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE muteuser SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE sourdineuser SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE supprembed SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE deleterole SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
+                    bot.db.query(`UPDATE deletechannel SET logs = 'on', state = 'on' WHERE guildId = ${message.guild.id}`);
 
                     botton3.setLabel(`Désactiver tous les modules du robot.                 ‎`), botton3.setStyle(Discord.ButtonStyle.Danger), activatemodule = false
                     msg.edit({ components: [new Discord.ActionRowBuilder().addComponents(MenuSelectionCounter), new Discord.ActionRowBuilder().addComponents(botton3), new Discord.ActionRowBuilder().addComponents(botton4)] })
                         activatemodule = false
                     } else {
-                        bot.db.query(`UPDATE antibot SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE antiroleadd SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE antiban SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE antithreadcreate SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE createrole SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE createchannel SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE createwebhook SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE decouser SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE depluser SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE removerole SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE timeout SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE expuluser SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE antilink SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE antispam SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE toxicite SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE updaterole SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE updatechannel SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE updateguild SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE massiverole SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE muteuser SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE sourdineuser SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE supprembed SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE deleterole SET logs = 'off' WHERE guildId = ${message.guild.id}`);
-                        bot.db.query(`UPDATE deletechannel SET logs = 'on' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE antibot SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE antiroleadd SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE antiban SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE antithreadcreate SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE createrole SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE createchannel SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE createwebhook SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE decouser SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE depluser SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE removerole SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE timeout SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE expuluser SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE antilink SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE antispam SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE toxicite SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE updaterole SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE updatechannel SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE updateguild SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE massiverole SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE muteuser SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE sourdineuser SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE supprembed SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE deleterole SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
+                        bot.db.query(`UPDATE deletechannel SET logs = 'off', state = 'off' WHERE guildId = ${message.guild.id}`);
 
                         botton3.setStyle(Discord.ButtonStyle.Success), botton3.setLabel("Activer tous les modules du robot.                    ‎"); activatemodule = true
                         activatemodule == true
