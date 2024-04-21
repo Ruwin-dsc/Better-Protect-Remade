@@ -117,7 +117,7 @@ module.exports = {
                         createLogChannel('ß・guildkick', 'expuluser');
                         createLogChannel('ß・messagewithlink', 'antilink');
                         createLogChannel('ß・messagespam', 'antispam');
-                        createLogChannel('ß・messagewithtoxicity', 'tocicite');
+                        createLogChannel('ß・messagewithtoxicity', 'toxicite');
                         createLogChannel('ß・roleupdate', 'updaterole');
                         createLogChannel('ß・channelupdate', 'updatechannel');
                         createLogChannel('ß・guildupdate', 'updateguild');
